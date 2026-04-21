@@ -40,7 +40,9 @@ This application, developed in **MATLAB App Designer**, is a powerful academic t
 ---
 
 ## 📝 License
-This project is distributed under the MIT License. See the `LICENSE` file for more details.
+This project is licensed under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
+
+You are free to share, copy, and redistribute the material in any medium or format, and adapt or transform the material for any purpose, including commercially, provided that you give appropriate credit to the original author.
 
 ---
 *Developed as a supporting tool for Mass Transfer Operations in Chemical Engineering.*
