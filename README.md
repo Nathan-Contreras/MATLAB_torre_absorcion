@@ -21,7 +21,7 @@ This application, developed in **MATLAB App Designer**, is a powerful academic t
 
 | Operational Setup | Results & Analytics |
 | :---: | :---: |
-| ![Data](images/image_bac72a.png) | ![Results](images/image_bac763.png) |
+| ![Data](images/datos.png) | ![Results](images/resultados.png) |
 
 ---
 
