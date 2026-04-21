@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        :root {
+            --bg-panel: #f5f5f5; /* El color de fondo de tu imagen */
+            --matlab-blue: #0076cc; /* El azul de los números 0.96 */
+            --border-color: #a0a0a0;
+            --text-dark: #333;
+        }
+
+        body {
+            background-color: var(--bg-panel);
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .instruction-box {
+            background: #ffffff;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            max-width: 650px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.05);
+            padding: 25px;
+        }
+
+        h1 {
+            color: var(--matlab-blue);
+            font-size: 1.4rem;
+            margin-top: 0;
+            border-bottom: 2px solid var(--bg-panel);
+            padding-bottom: 10px;
+            text-align: center;
+        }
+
+        .step {
+            margin-bottom: 20px;
+            padding-left: 15px;
+            border-left: 3px solid transparent;
+            transition: border-left 0.3s;
+        }
+
+        .step:hover {
+            border-left: 3px solid var(--matlab-blue);
+        }
+
+        .step-title {
+            font-weight: bold;
+            color: var(--text-dark);
+            font-size: 1.1rem;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .step-content {
+            color: #555;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .highlight {
+            color: var(--matlab-blue);
+            font-weight: 600;
+        }
+
+        .badge {
+            background: var(--bg-panel);
+            color: var(--matlab-blue);
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: monospace;
+            border: 1px solid var(--border-color);
+            font-size: 0.85rem;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #eee;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="instruction-box">
+    <div class="step">
+        <span class="step-title">1. Configuración Inicial</span>
+        <div class="step-content">
+            Ajusta <span class="highlight">Flujos (L y G)</span>, Temperatura y Presión usando las perillas o los cuadros de texto. 
+            <br><em>Rango recomendado:</em> <span class="badge">10°C a 60°C</span> para asegurar la precisión del modelo de Henry.
+        </div>
+    </div>
+
+    <div class="step">
+        <span class="step-title">2. Definición del Empaque</span>
+        <div class="step-content">
+            Selecciona el Tipo de Empaque y su Diámetro. El menú se filtrará automáticamente. 
+            <span class="highlight">Importante:</span> Ingresa la Altura de Empaque <span class="badge">(Z)</span> real de tu columna en metros.
+        </div>
+    </div>
+
+    <div class="step">
+        <span class="step-title">3. Simulación Teórica</span>
+        <div class="step-content">
+            Presiona <span class="highlight">"Cálculos Teóricos"</span> para obtener el coeficiente global de transferencia (kLa) y la absorción esperada según el modelo de Sherwood-Holloway.
+        </div>
+    </div>
+
+    <div class="step">
+        <span class="step-title">4. Datos de Laboratorio</span>
+        <div class="step-content">
+            Registra tus mediciones en la tabla de Titulación (Tiempo, Vol. NaOH y Temp). Haz clic en <span class="highlight shadow">"Procesar Titulación"</span> para generar los resultados reales y comparar con el modelo.
+        </div>
+    </div>
+
+    <div class="step">
+        <span class="step-title">5. Reporte Final</span>
+        <div class="step-content">
+            Usa <span class="highlight">"Exportar a Excel"</span> para guardar todos los parámetros y resultados en un archivo <span class="badge">.xlsx</span> listo para tu informe.
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
